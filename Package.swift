@@ -24,7 +24,7 @@ let package = Package(
             dependencies: ["Munchausen"]),
         .binaryTarget(
             name: "Munchausen",
-            url: "",
+            url: "https://github.com/KennethYoel/SwiftOxide/releases/download/0.0.1/bundle.zip",
             checksum: "cdb5cc735396ca0d3ee303f6686221dbf12a29a79f13c4f368118a67c0fd14e1"),
         .testTarget(
             name: "SwiftOxideTests",
