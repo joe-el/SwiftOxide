@@ -6,6 +6,8 @@ final class SwiftOxideTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(SwiftOxide().text, "Hello, World!")
+        let actual = SwiftOxide().rustMunchausenNum()
+        
+        XCTAssertEqual(actual, [0, 1, 3435, 438579088])
     }
 }
