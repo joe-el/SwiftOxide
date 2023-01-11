@@ -9,10 +9,7 @@ import Foundation
 import Munchausen
 
 public struct SwiftOxide {
-    public init() {
-    }
-    
-    static func rustMunchausenNum() -> [Int] {
+    public static func rustMunchausenNum() -> [Int] {
         var wholeNumbers: [Int] = []
         let (firstVal, secondVal, thirdVal, fourthVal) = rust_munchausen_numbers().pointee
         wholeNumbers = [Int(firstVal), Int(secondVal), Int(thirdVal), Int(fourthVal)]
