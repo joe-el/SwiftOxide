@@ -12,7 +12,7 @@ public struct SwiftOxide {
     public init() {
     }
     
-    public func rustMunchausenNum() -> [Int] {
+    static func rustMunchausenNum() -> [Int] {
         var wholeNumbers: [Int] = []
         let (firstVal, secondVal, thirdVal, fourthVal) = rust_munchausen_numbers().pointee
         wholeNumbers = [Int(firstVal), Int(secondVal), Int(thirdVal), Int(fourthVal)]
